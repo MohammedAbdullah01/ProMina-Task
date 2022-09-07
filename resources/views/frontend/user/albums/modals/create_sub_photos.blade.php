@@ -16,10 +16,7 @@
                 <form action="{{route('store.sub.photos' , $album->id)}}" method="post" enctype="multipart/form-data">
                     @method('POST')
                     @csrf
-                    <x-form.input-lable-error lable="Sub Photos" type="file" multiple name='sub_photos[]'  />
-                    @error('sub_photos')
-                                    <div class="invalid-feedback">{{ $message }} </div>
-                                @enderror
+                    <x-form.input-lable-error lable="Sub Photos" type="file"  name="sub_photos[]" multiple  />
                     <div class="modal-footer">
                         <button type="button" class="btn btn-outline-dark btn-sm"
                             data-bs-dismiss="modal">Close</button>

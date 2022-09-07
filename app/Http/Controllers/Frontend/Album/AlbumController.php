@@ -68,7 +68,7 @@ class AlbumController extends Controller
     {
         $this->albumRepository->destroy($id);
 
-        return redirect()->back()->with('success', "Sub-Photos Have Deleted Successfully :) ");
+        return redirect()->back()->with('success', "The Album Was Deleted Successfully :) ");
     }
 
     /**

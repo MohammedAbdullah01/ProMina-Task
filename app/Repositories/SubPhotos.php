@@ -20,7 +20,7 @@ class SubPhotos implements iSubPhotosRepository
     public function storeSubPhotos($request, $id)
     {
         $request->validate([
-            'sub_photos.*' => 'image|mimes:jpeg,png,jpg|max:5048|dimensions:max_width=1500,max_height=1500'
+            "sub_photos*" => 'image|mimes:jpeg,png,jpg|max:5048|dimensions:max_width=3000,max_height=3000'
         ]);
 
         $storePhotos = $this->album::findOrFail($id);
@@ -32,17 +32,14 @@ class SubPhotos implements iSubPhotosRepository
 
                 $name_sub_picture =  time() . '_' . $file->getClientOriginalName();
 
-                $storePhotos->images()->create(
-                    [
-                        'name'       => $file->getClientOriginalName(),
-                        'sub_photos' => $name_sub_picture,
-                        'album_id' => $request->album
-                    ]
-                );
+                $storePhotos->images()->create([
+                    'name'       => $file->getClientOriginalName(),
+                    'sub_photos' => $name_sub_picture,
+                    'album_id' => $id
+                ]);
                 $move_sub_picture = $file->storeAs('albums/sub_photos', $name_sub_picture, 'public');
-                return redirect()->back()->with('success', "Successfully Added Sub Photos :) ");
             }
-
+            return redirect()->back()->with('success', "Successfully Added Sub Photos :) ");
         } else {
             return redirect()->back()->with('error', "Sub Photos field is required  :( ");
         }

@@ -18,29 +18,14 @@
 
 </div>
 
-
-<div class="col-12">
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" name="remember"
-            value="true" id="rememberMe">
-        <label class="form-check-label" for="rememberMe">Remember me</label>
-    </div>
-</div>
-
-
 <div class="d-grid gap-2 col-8 mx-auto">
     <button class="btn btn-outline-info btn-sm" type="submit">Login</button>
 </div>
 
 <div class="col-12">
     <p class="small mb-0">Don't have account?
-        <a href="pages-register.html">
+        <a href="{{route('register')}}">
             Createan account
-        </a>
-    </p>
-    <p class="small mb-0">Forget Your Password?
-        <a href="pages-register.html">
-            Forget Password
         </a>
     </p>
 </div>
