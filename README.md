@@ -49,6 +49,7 @@
  - ` Run composer install ` 
  - ` Run php artisan key-generate ` 
  - ` php artisan storage:link `
+ - ` php artisan migrate `
  -------------------------------------------------------------------------------------------------
  ## My Warm Greetings :)
 
