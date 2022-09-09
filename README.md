@@ -33,7 +33,7 @@
  ![NamePhoto](public/assets/img/2022-09-07%20(7).png)
  ![NamePhoto](public/assets/img/2022-09-07%20(8).png)
  ![NamePhoto](public/assets/img/2022-09-07%20(9).png)
- ![NamePhoto](//public/assets/img/2022-09-07%20(10).png)
+ ![NamePhoto](public/assets/img/2022-09-07%20(10).png)
  ![NamePhoto](public/assets/img/2022-09-07%20(11).png)
  ![NamePhoto](public/assets/img/2022-09-07%20(12).png)
  ![NamePhoto](public/assets/img/2022-09-07%20(13).png)
